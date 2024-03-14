@@ -1,0 +1,15 @@
+{% extends 'flatpages/default.html' %}
+{% load bad_words %}
+
+{% block title %}News{% endblock %}
+
+{% block content %}
+    <h1>Новости</h1>
+    <hr>
+    {{ news_detail.title|censor }}
+    <hr>
+    {{ news_detail.published|date:"d E Y" }}
+    <hr>
+    {{ news_detail.description|censor }}
+    <hr>
+{% endblock content %}

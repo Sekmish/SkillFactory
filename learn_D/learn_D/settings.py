@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g3d-_64gbmsy-(6^u#+ce-pc=_64ol3_m8ywbl%e4x6fw^x^$3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.242', '94.230.141.137']
+ALLOWED_HOSTS = ['94.230.141.137']
 
 
 # Application definition
@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
-    'fpages'
+    'fpages',
+    'simpleapp',
 ]
 
 SITE_ID = 1
@@ -82,8 +83,12 @@ WSGI_APPLICATION = 'learn_D.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'sf_test',
+        'USER': 'pan',
+        'PASSWORD': 'bd!!<FPF22lfyys[33',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -110,9 +115,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Indian/Maldives'
 
 USE_I18N = True
 
