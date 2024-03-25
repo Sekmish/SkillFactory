@@ -94,7 +94,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'sf_test',
         'USER': 'pan',
-        'PASSWORD': 'bd!!<FPF22lfyys[33',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '5432',
     }
