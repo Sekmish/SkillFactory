@@ -5,11 +5,12 @@
 
 {% block content %}
     <h1>Новости</h1>
-    
-    
-    
+    <form action="" method="get">
+        {{ filterset.form.as_p }}
+        <input type="submit" value="Search" />
+    </form>
     <h2>Всего: {{ total_news_count }}</h2>
-    <h5>По {{ news|length }} на странице</h5>
+    <h5>на странице {{ news|length }}</h5>
     {% if news %}
         <table>
             <tr>
